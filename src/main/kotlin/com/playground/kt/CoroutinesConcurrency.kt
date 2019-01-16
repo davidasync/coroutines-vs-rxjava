@@ -2,13 +2,6 @@ package com.playground.kt
 
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
-import java.util.Random
-
-private fun defaultParallelism() = (Runtime.getRuntime().availableProcessors() - 1).coerceAtLeast(1)
-
-fun randInt(min: Int, max: Int): Int {
-    return Random().nextInt(max - min + 1) + min
-}
 
 fun intenseCalculation(i: Int): Int {
     try {
